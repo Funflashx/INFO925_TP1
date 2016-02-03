@@ -5,4 +5,5 @@ package model;
  * All rights reserved.
  */
 public class Content {
+
 }
