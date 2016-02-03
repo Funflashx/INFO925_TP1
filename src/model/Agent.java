@@ -1,10 +1,20 @@
 package model;
 
-import model.Content;
+import model.interfaces.Cell;
 
 /**
  * Created by François Caillet on 03/02/2016.
  * All rights reserved.
  */
-public class Agent extends Content{
+public class Agent implements Cell {
+	
+	public Position GetPosition(){
+		return null;
+		
+	}
+	public void setPosition (Position position){
+		
+	}
+	
+	
 }
