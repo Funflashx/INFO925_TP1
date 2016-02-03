@@ -4,6 +4,7 @@ public class Cell {
 
 	private Position position;
 
+
 	public Cell(Position position) {
 		this.position = position;
 	}
@@ -21,7 +22,7 @@ public class Cell {
 	@Override
 	public String toString() {
 		return "Cell{" +
-				"position=" + position +
+				position.toString() +
 				'}';
 	}
 }
