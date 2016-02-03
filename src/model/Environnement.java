@@ -8,6 +8,5 @@ import java.util.Vector;
  */
 public class Environnement {
 
-    private Vector<Content> contents;
 
 }
