@@ -6,6 +6,11 @@ package model;
  */
 public class Worthless extends Object {
 
+    /**
+     * Represente un objet inutile dans l'environement
+     * (Murs, rochers, arbre...)
+     * @param position
+     */
     public Worthless(Position position) {
         super(position);
     }
