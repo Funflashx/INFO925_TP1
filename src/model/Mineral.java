@@ -6,6 +6,9 @@ package model;
  */
 public class Mineral extends Object {
 
+    public TypeMineral typeMineral;
+    public int quantity;
+
     public Mineral(Position position) {
         super(position);
     }
