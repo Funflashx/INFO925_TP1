@@ -11,7 +11,5 @@ public class Agent extends Cell {
 	public Agent(Position position, String name) {
 		super(position);
 		this.name = name;
-	}
-	
-	
+	}	
 }

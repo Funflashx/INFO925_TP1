@@ -25,11 +25,11 @@ public class Environment {
      * @param width extent from side to side
      * @param height distance upward
      */
-    public Environment(int width, int height) {
+    public Environment(String name, int width, int height) {
+    	this.name = name;
         this.cells = new Cell[width][height];
         this.width = width;
         this.height = height;
-        this.name = "";
     }
 
     /**
