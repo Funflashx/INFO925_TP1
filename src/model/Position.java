@@ -31,6 +31,17 @@ public class Position {
 		this.y = y;
 	}
 
+	/**
+	 * Check if the current position is in the environement
+	 * @param	width	width of the environement
+	 * @param	height	height of the environement
+	 * @return			true if the position is in the environement
+	 */
+	public boolean isBetweenBounds(int width, int height)
+	{
+		return this.x >= 0 && this.x < width && this.y >= 0 && this.y < height;
+	}
+
 	@Override
 	public String toString() {
 		return "Position{" +
