@@ -11,13 +11,13 @@ public class Main {
 		Explorer d = new Explorer(new Position(4,10), "Boubou");
 		Explorer e = new Explorer(new Position(8,9), "Florgasme");
 		
-		Mineral ma = new Mineral(new Position(6,4), 10, .Gold);
-		Mineral mb = new Mineral(new Position(3,4), 100, .Silver);
-		Mineral mc = new Mineral(new Position(1,8), 20, .Elixir);
-		Mineral md = new Mineral(new Position(1,2), 50, .Elixir);
-		Mineral me = new Mineral(new Position(9,4), 5, .Gold);
-		Mineral mf = new Mineral(new Position(10,10), 80, .Silver);
-		Mineral mg = new Mineral(new Position(2,7), 20, .Gold);
+		Mineral ma = new Mineral(new Position(6,4), 10, TypeMineral.Gold);
+		Mineral mb = new Mineral(new Position(3,4), 100, TypeMineral.Silver);
+		Mineral mc = new Mineral(new Position(1,8), 20, TypeMineral.Elixir);
+		Mineral md = new Mineral(new Position(1,2), 50, TypeMineral.Elixir);
+		Mineral me = new Mineral(new Position(9,4), 5, TypeMineral.Gold);
+		Mineral mf = new Mineral(new Position(10,10), 80, TypeMineral.Silver);
+		Mineral mg = new Mineral(new Position(2,7), 20, TypeMineral.Gold);
 		
 		Worthless wa = new Worthless(new Position(1,1), "Road");
 		Worthless wb = new Worthless(new Position(9,5), "Tree");
