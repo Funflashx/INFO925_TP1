@@ -7,13 +7,16 @@ import model.interfaces.Cell;
  * All rights reserved.
  */
 public class Agent implements Cell {
-	
+
+	private Position position;
+
 	public Position getPosition(){
-		return null;
+		return position;
 		
 	}
+
 	public void setPosition (Position position){
-		
+		this.position = position;
 	}
 	
 	
