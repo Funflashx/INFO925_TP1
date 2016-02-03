@@ -1,18 +1,13 @@
 package model;
 
-import model.interfaces.*;
-
 /**
  * Created by François Caillet on 03/02/2016.
  * All rights reserved.
  */
-public class Empty implements Cell {
-	
-	public Position getPosition(){
-		return null;
-		
+public class Empty extends Cell {
+
+	public Empty(Position position) {
+		super(position);
 	}
-	public void setPosition (Position position){
-		
-	}
+
 }

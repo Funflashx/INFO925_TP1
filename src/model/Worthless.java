@@ -5,4 +5,9 @@ package model;
  * All rights reserved.
  */
 public class Worthless extends Object {
+
+    public Worthless(Position position) {
+        super(position);
+    }
+
 }

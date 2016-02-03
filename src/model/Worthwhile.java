@@ -5,4 +5,9 @@ package model;
  * All rights reserved.
  */
 public class Worthwhile extends Object {
+
+    public Worthwhile(Position position) {
+        super(position);
+    }
+
 }

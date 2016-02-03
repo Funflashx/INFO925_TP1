@@ -1,7 +1,5 @@
 package model;
 
-import model.interfaces.Cell;
-
 import java.util.Arrays;
 
 /**

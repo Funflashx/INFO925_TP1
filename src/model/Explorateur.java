@@ -2,8 +2,8 @@ package model;
 
 public class Explorateur extends Agent {
 
-	public Explorateur() {
-		
+	public Explorateur(Position position) {
+		super(position);
 	}
 
 }
