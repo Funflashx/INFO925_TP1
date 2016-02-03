@@ -6,7 +6,7 @@ public interface Cell {
 	
 	Position position = null;
 	
-	public Position GetPosition();
+	public Position getPosition();
 	public void setPosition (Position position);
 	
 }

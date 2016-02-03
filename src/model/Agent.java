@@ -8,7 +8,7 @@ import model.interfaces.Cell;
  */
 public class Agent implements Cell {
 	
-	public Position GetPosition(){
+	public Position getPosition(){
 		return null;
 		
 	}
