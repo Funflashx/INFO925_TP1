@@ -8,7 +8,7 @@ import model.interfaces.*;
  */
 public class Object implements Cell {
 	
-	public Position GetPosition(){
+	public Position getPosition(){
 		return null;
 		
 	}
