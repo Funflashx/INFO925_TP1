@@ -8,6 +8,13 @@ import java.util.Vector;
  */
 public class Environnement {
 
-    private Content[][] contents;
+    private String name;
+    /**
+     * width and height are numbers of cells
+     */
+    private int width;
+    private int height;
+
+    private Cell[][] cells;
 
 }
