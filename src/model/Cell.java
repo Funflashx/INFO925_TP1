@@ -17,5 +17,11 @@ public class Cell {
 		this.position.setY(y);
 	}
 
-	
+
+	@Override
+	public String toString() {
+		return "Cell{" +
+				"position=" + position +
+				'}';
+	}
 }

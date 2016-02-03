@@ -9,8 +9,9 @@ public class Mineral extends Object {
     public TypeMineral typeMineral;
     public int quantity;
 
-    public Mineral(Position position) {
+    public Mineral(Position position, int quantity, TypeMineral typeMineral) {
         super(position);
+        this.quantity = quantity;
+        this.typeMineral = typeMineral;
     }
-
 }

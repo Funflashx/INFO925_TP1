@@ -12,4 +12,17 @@ public class Agent extends Cell {
 		super(position);
 		this.name = name;
 	}	
+	
+	void init () {
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Agent{" +
+				"name='" + name + '\'' +
+				'}';
+	}
+
+
 }
