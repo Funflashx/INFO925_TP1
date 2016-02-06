@@ -7,13 +7,11 @@ import java.util.Vector;
  * Created by François Caillet on 03/02/2016.
  * All rights reserved.
  */
-
-
 public class Environment {
 
     private String name;
     /**
-     * width and height are numbers of cells
+     * width and height b numbers of cells
      */
     private int width;
     private int height;
@@ -24,6 +22,7 @@ public class Environment {
     /**
      * Constructor
      * ***************************
+     * @param name environment's name
      * @param width extent from side to side
      * @param height distance upward
      */
@@ -33,6 +32,7 @@ public class Environment {
         this.width = width;
         this.height = height;
     }
+
 
     /**
      * GETTERS & SETTERS

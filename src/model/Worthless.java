@@ -7,16 +7,16 @@ package model;
 
 public class Worthless extends Object {
 
-    private String name;
+    private String label;
 
     /**
-     * Represente un objet inutile dans l'environement
-     * (Murs, rochers, arbre...)
+     * Represente un objet inutile dans l'environement (Murs, rochers, arbre...)
      * @param position position de cette objet
+     * @param label a label
      */
-    public Worthless(Position position, String name) {
+    public Worthless(Position position, String label) {
         super(position);
-        this.name = name;
+        this.label = label;
     }
 
 }
