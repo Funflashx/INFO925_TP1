@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Arrays;
+import java.util.Vector;
 
 /**
  * Created by François Caillet on 03/02/2016.
@@ -18,6 +19,7 @@ public class Environment {
     private int height;
 
     private Cell[][] cells;
+    private Vector<Agent> agents;
 
     /**
      * Constructor
@@ -92,6 +94,10 @@ public class Environment {
 
         if (x >= 0 && x < width && y >= 0 && y < height)
             cells[x][y] = cell;
+    }
+
+    public void addAgent(Agent agent){
+        agents.addElement(agent);
     }
 
 
