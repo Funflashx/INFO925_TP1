@@ -10,4 +10,10 @@ public class Object extends Cell {
 		super(position);
 	}
 	
+	@Override
+	public String toString() {
+		return "Object{" +
+				"position='" + super.getPosition() + '\'' +
+				'}';
+	}
 }

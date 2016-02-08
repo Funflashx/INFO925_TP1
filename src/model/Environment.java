@@ -94,9 +94,9 @@ public class Environment {
 
         if (x >= 0 && x < width && y >= 0 && y < height)
             cells[x][y] = cell;
-        if ( cell instanceof Agent) {
-        	addAgent((Agent)cell);
-        }
+        /*if ( cell instanceof Agent) {
+        	addAgent(new Agent(cell.getPosition(), ((Agent) cell).getName()));
+        }*/
     }
 
     public void addAgent(Agent agent){

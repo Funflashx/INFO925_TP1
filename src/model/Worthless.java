@@ -18,5 +18,11 @@ public class Worthless extends Object {
         super(position);
         this.label = label;
     }
-
+    
+    @Override
+	public String toString() {
+		return "Worthless{" +
+				"Label='" + label + '\'' +
+				'}';
+	}
 }

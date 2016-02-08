@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Created by FranÃ§ois Caillet on 03/02/2016.
+ * Created by François Caillet on 03/02/2016.
  * All rights reserved.
  */
 public class Mineral extends Object {
@@ -40,4 +40,12 @@ public class Mineral extends Object {
     public void setTypeMineral(TypeMineral typeMineral) {
         this.typeMineral = typeMineral;
     }
+    
+    @Override
+	public String toString() {
+		return "Mineral{" +
+				"quantity='" + quantity + "\', " +
+				"typeMineral='" + typeMineral + "\'" +
+				'}';
+	}
 }

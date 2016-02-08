@@ -48,17 +48,17 @@ public class Main {
 		 */
 		
 		/* Agents */
-		mars.getCell(2, 5).toString(); // must return Anthony
-		mars.getCell(5, 5).toString(); // must return Francois
-		mars.getCell(7, 1).toString(); // must return Lulu
+		System.out.println(mars.getCell(2, 5).toString()); // must return Anthony
+		System.out.println(mars.getCell(5, 5).toString()); // must return Francois
+		System.out.println(mars.getCell(7, 1).toString()); // must return Lulu
 		
 		/* Minerals */ 
-		mars.getCell(6, 4).toString(); // must return Gold
-		mars.getCell(3, 4).toString(); // must return Silver
+		System.out.println(mars.getCell(6, 4).toString()); // must return Gold
+		System.out.println(mars.getCell(3, 4).toString()); // must return Silver
 		
 		/* Things */
-		mars.getCell(1, 1).toString(); // must return Road
-		mars.getCell(9, 5).toString(); // must return Tree
+		System.out.println(mars.getCell(1, 1).toString()); // must return Road
+		System.out.println(mars.getCell(9, 5).toString()); // must return Tree
 	}
 
 	public static void main(String[] args) {
