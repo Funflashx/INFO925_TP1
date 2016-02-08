@@ -1,5 +1,7 @@
 package model;
 
+import view.MainWindow;
+
 public class Main {
 
 	public Main() {
@@ -42,6 +44,7 @@ public class Main {
 		mars.addCell(new Worthless(new Position(10,8), "Tree"));
 		mars.addCell(new Worthless(new Position(1,8), "Tree"));
 		mars.addCell(new Worthless(new Position(4,5), "Road"));
+		mars.addCell(new Worthless(new Position(0,0), "Tree"));
 		
 		/**
 		 * Testing objects are on good position
@@ -59,6 +62,11 @@ public class Main {
 		/* Things */
 		System.out.println(mars.getCell(1, 1).toString()); // must return Road
 		System.out.println(mars.getCell(9, 5).toString()); // must return Tree
+		
+		/* Création de la fenêtre d'environnement */
+		MainWindow myWindow = new MainWindow(mars);
+		
+		
 	}
 
 	public static void main(String[] args) {
