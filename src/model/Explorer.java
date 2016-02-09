@@ -9,5 +9,10 @@ public class Explorer extends Agent {
 	void findMineral() {
 		
 	}
+	
+	@Override
+	public String toString() {
+		return "Explorer: " + super.getName();
+	}
 
 }

@@ -1,14 +1,24 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Observable;
+
 public class Cell {
 
 	private Position position;
+	
+	//Notre collection d'observateurs
+	//private ArrayList<Observateur> listObservateurs = new ArrayList<Observateur>();
 
 	/**
 	 * Constructor
 	 * **************************
 	 * @param position on environment
 	 */
+	
+	public Cell() {
+	}
+	
 	public Cell(Position position) {
 		this.position = position;
 	}
@@ -24,11 +34,11 @@ public class Cell {
 		this.position.setY(y);
 	}
 
-
 	@Override
 	public String toString() {
 		return "Cell{" +
 				position.toString() +
 				'}';
 	}
+	
 }

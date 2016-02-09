@@ -39,10 +39,7 @@ public class Agent extends Cell {
 
 	@Override
 	public String toString() {
-		return "Agent{" +
-				"name='" + name + '\'' +
-				'}';
+		return "Agent: "+ name;
 	}
-
 
 }

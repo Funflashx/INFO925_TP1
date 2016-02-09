@@ -1,13 +1,13 @@
 package model;
 
 import java.util.Arrays;
-import java.util.Vector;
+import java.util.Observable;
 
 /**
  * Created by François Caillet on 03/02/2016.
  * All rights reserved.
  */
-public class Environment {
+public class Environment extends Observable{
 
     private String name;
     /**
@@ -17,7 +17,7 @@ public class Environment {
     private int height;
 
     private Cell[][] cells;
-    private Vector<Agent> agents;
+    //private ArrayList<Agent> agents;
 
     /**
      * Constructor
@@ -62,7 +62,8 @@ public class Environment {
         this.height = height;
     }
 
-    /**
+
+	/**
      * Returns the cell which is at the position x, y in the cells table
      * @param	x	x position
      * @param	y	y position
@@ -93,17 +94,48 @@ public class Environment {
         int y = cell.getPosition().getY();
 
         if (x >= 0 && x < width && y >= 0 && y < height)
-            cells[x][y] = cell;
+            this.cells[x][y] = cell;
         /*if ( cell instanceof Agent) {
         	addAgent(new Agent(cell.getPosition(), ((Agent) cell).getName()));
         }*/
     }
-
+/*
     public void addAgent(Agent agent){
-        agents.addElement(agent);
+        agents.add(agent);
+    }*/
+
+    public void setPositionCell(Cell cell, int newX, int newY) {
+    	int x = cell.getPosition().getX();
+        int y = cell.getPosition().getY();
+        
+        if (newX >= 0 && newX < width && newY >= 0 && newY < height) {
+        	cell.setPosition(newX, newY);
+            addCell(cell);
+         	removeCell(x,y);
+         	setChanged();
+         	notifyObservers();
+        }
     }
-
-
+    
+    public void run() {
+		try {
+			for(int i=0; i<width; i++) {
+        		for(int j=0; j<height; j++) {
+    				Cell cell = new Cell();
+        			cell = getCell(i,j);
+        			if(cell != null ) {
+        				if(cell.getClass().getSimpleName().equals("Explorer")) {
+        					setPositionCell(cell,i+1,j+1);
+        				}	
+        			}
+    	    	}
+        	}
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+    }
+    
     @Override
     public String toString() {
         return "Environment{" +
